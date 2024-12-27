@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Timer : MonoBehaviour
+public class Timer_Level2 : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timertext;
     [SerializeField] float MaxTime;
