@@ -3935,7 +3935,6 @@ GameObject:
   - component: {fileID: 2054117724}
   - component: {fileID: 2054117728}
   - component: {fileID: 2054117729}
-  - component: {fileID: 2054117730}
   m_Layer: 0
   m_Name: +3 Sec
   m_TagString: Time
@@ -4056,21 +4055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aea0f5f67eb95b46b68c2b40cd4c6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinFX: {fileID: 1359104280}
---- !u!114 &2054117730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054117723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aa8cbb5a3294e14d888b45a69c40f96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   timeCollectable: 1
-  collectableValue: 20
+  collectableValue: 30
+  coinFX: {fileID: 1359104280}
 --- !u!4 &2129102065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6742820232195882807, guid: d83bf5421fa587548b541193382273ea, type: 3}
