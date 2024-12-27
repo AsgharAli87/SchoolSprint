@@ -42,5 +42,23 @@ public class Anime : MonoBehaviour
         {
             animation.SetBool("isback", false);
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            animation.SetBool("left", true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            animation.SetBool("left", false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            animation.SetBool("right", true);
+
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            animation.SetBool("right", false);
+        }
     }
 }
