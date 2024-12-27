@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class CollectablesScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private bool timeCollectable;
+    [SerializeField] private float collectableValue = 30f;
+    private Timer timer;
+    void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(other.CompareTag("Player"))
+        {
+            if(timeCollectable)
+            {
+                timer.IncreaseTime(collectableValue);
+            }
+            gameObject.SetActive(false);
+        }        
     }
 }

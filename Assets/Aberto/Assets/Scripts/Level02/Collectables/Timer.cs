@@ -6,6 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timertext;
+    [SerializeField] float MaxTime;
     [SerializeField] float remainingtime;
 
     void Update()
@@ -18,10 +19,18 @@ public class Timer : MonoBehaviour
         {
             remainingtime = 0;
             //GameOver();
-            timertext.color = Color.red;
+            
         }
         int minutes = Mathf.FloorToInt(remainingtime / 60);
         int seconds = Mathf.FloorToInt(remainingtime % 60);
         timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    public void IncreaseTime(float time)
+    {
+        remainingtime =+ time;
+        if (remainingtime > MaxTime)
+        {
+            remainingtime = MaxTime;
+        }
     }
 }
