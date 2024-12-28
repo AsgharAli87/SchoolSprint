@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerMove : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public float sidewaysSpeed = 4f;
+    public float sidewaysSpeed = 1f;
     void Update()
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
