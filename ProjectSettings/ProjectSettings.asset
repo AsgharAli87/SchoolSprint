@@ -839,7 +839,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -859,11 +865,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 7fc068a2-fd06-49bf-82e6-5fe085c63f5d
+  cloudProjectId: 0a203c97-da94-4a7d-9677-f043b33ecf53
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project (2) 2024-12-15_04-30-56
-  organizationId: iqraarshad
+  projectName: My project (2)
+  organizationId: aberto_001
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
