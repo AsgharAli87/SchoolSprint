@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // public static GameManagerScript newgamemanager { get; private set; }
+    // public UnitHealth _playerStamina = new UnitHealth(100, 100);
+    
+    // void Awake()
+    // {
+    //     if (newgamemanager != null && newgamemanager != this)
+    //     {
+    //         Destroy(this);
+    //     }
+    //     else
+    //     {
+    //         newgamemanager = this;
+    //     }
+    // }
 
     public void GameOver()
     {
@@ -25,5 +29,9 @@ public class GameManagerScript : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
