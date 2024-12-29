@@ -18,7 +18,7 @@ public class Playerbehave : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift)) 
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             damageTimer += Time.deltaTime; // Increment timer based on frame time
             if (damageTimer >= damageInterval) // Check if the interval has elapsed

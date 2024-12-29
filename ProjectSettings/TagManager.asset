@@ -7,6 +7,11 @@ TagManager:
   - Eatable
   - time
   - Obstacle
+  - Stop
+  - IaCar
+  - Marcador
+  - Blocks
+  - mainmenu
   layers:
   - Default
   - TransparentFX
