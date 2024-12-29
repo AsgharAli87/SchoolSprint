@@ -12,6 +12,7 @@ TagManager:
   - Marcador
   - Blocks
   - mainmenu
+  - END
   layers:
   - Default
   - TransparentFX

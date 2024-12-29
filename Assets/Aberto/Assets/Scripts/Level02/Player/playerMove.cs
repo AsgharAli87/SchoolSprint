@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float sidewaysSpeed = 1f;
+    public float moveSpeed = 5f;
+    public float sidewaysSpeed = 3f;
     void Update()
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
@@ -23,14 +23,13 @@ public class playerMove : MonoBehaviour
                 transform.Translate(Vector3.left * Time.deltaTime * sidewaysSpeed);
             }
         }
-
-
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             if (this.gameObject.transform.position.x < LevelBoundary.rightSide)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * sidewaysSpeed * -1);
             }
-        }   
+        }
+          
     }
 }

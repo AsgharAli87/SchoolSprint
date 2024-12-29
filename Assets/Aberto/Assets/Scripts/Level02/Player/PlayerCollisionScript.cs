@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerCollisionScript : MonoBehaviour
 {
-    public GameManagerScript gameManager;
-    void OnCollisionEnter(Collision collision)
+    public GameObject GameOverUI;
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.collider.tag == "Obstacle")
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("GameOver!!!");
-            FindObjectOfType<GameManagerScript>().GameOver();
+            Time.timeScale = 0f;
+            GameOverUI.SetActive(true);
         }
     }
 }
