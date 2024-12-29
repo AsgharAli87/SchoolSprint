@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Eatable
   - time
+  - Obstacle
   layers:
   - Default
   - TransparentFX

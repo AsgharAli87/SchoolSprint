@@ -5,18 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public static bool isGameOver;
     public GameObject gameOverUI;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Awake() {
+        isGameOver = false;
     }
-
     public void GameOver()
     {
         gameOverUI.SetActive(true);
@@ -24,5 +18,11 @@ public class GameManagerScript : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void Update() {
+        if (isGameOver){
+            GameOver();
+        }
     }
 }
