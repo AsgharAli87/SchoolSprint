@@ -21,7 +21,8 @@ public class GameManagerScript : MonoBehaviour
     }
 
     void Update() {
-        if (isGameOver){
+        if (isGameOver)
+        {
             GameOver();
         }
     }
