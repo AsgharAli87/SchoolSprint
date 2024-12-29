@@ -11,6 +11,7 @@ TagManager:
   - Marcador
   - Blocks
   - mainmenu
+  - crash
   layers:
   - Default
   - TransparentFX
