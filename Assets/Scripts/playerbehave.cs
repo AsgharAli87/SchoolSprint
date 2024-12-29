@@ -25,7 +25,7 @@ public class Playerbehave : MonoBehaviour
             {
                 PLayerTakeDmg(1); // Apply damage
                 Debug.Log("Player Health: " + GameManager.gamemanager._playerHealth.Health);
-                damageTimer = 0.0f; // Reset the timer
+                damageTimer = 60.0f; // Reset the timer
             }
         }
         else

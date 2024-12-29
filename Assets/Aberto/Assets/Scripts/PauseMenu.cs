@@ -7,13 +7,15 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject LevelcompleteUI;
     
+
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(gameIsPaused)
+            if (gameIsPaused)
             {
                 Resume();
             }
@@ -29,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+
     }
     void Pause()
     {
@@ -37,12 +40,17 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = true;
     }
     public void LoadMenu()
-    {   
+    {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Start_Screen");
+
     }
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void Levelcomplete()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

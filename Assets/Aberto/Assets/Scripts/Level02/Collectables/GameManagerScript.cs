@@ -20,6 +20,7 @@ public class GameManagerScript : MonoBehaviour
     public void GameOver()
     {
         gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
     }
     public void Restart()
     {
