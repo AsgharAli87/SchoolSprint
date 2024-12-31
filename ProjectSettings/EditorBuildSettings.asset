@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Aberto/Scenes/Start_Screen.unity
     guid: 2bf3940fbbd3ffd438661fc54c8c97ff
   - enabled: 1
+    path: Assets/Aberto/Scenes/Introduction.unity
+    guid: 075e98ff8337b6d4b9c8cf44bfcc9d3d
+  - enabled: 1
     path: Assets/Scenes/Level01.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -16,5 +19,5 @@ EditorBuildSettings:
     guid: a0523a847f091344f95e9e93e110ff94
   - enabled: 1
     path: Assets/Scenes/Level03.unity
-    guid: 92a14c02e5ff56346b763bd03ae4c9ff
+    guid: 3d51ca48f45f45445a78822c97a4cdc7
   m_configObjects: {}

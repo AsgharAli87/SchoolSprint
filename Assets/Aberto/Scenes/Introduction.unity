@@ -967,13 +967,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187577888}
+  - component: {fileID: 1187577889}
   m_Layer: 0
   m_Name: NextSceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1187577888
 Transform:
   m_ObjectHideFlags: 0
@@ -989,6 +990,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1187577889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187577887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f3dde31995ce3438dd476fc1b6e5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1189086974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1353,8 @@ PlayableDirector:
     value: {fileID: 797633029}
   - key: {fileID: 2949141748562344314, guid: 99439dc1e8f9eee4191551cfe28ef12b, type: 2}
     value: {fileID: 910785259}
+  - key: {fileID: 433986042969061968, guid: 99439dc1e8f9eee4191551cfe28ef12b, type: 2}
+    value: {fileID: 1187577887}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &2108753189

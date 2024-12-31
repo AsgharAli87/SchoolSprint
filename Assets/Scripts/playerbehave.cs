@@ -13,12 +13,7 @@ public class Playerbehave : MonoBehaviour
     public GameManagerScript gameManager;
 
     private bool isDead;
-    void Start()
-    {
-        _healthbar.SetMaxHealth(GameManager.gamemanager._playerHealth.MaxHealth);
-       
-    }
-
+   
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))
