@@ -318,7 +318,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2329525006367047803, guid: c7c6770b81a7e5747a75e0c219e529cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779580200750326644, guid: c7c6770b81a7e5747a75e0c219e529cc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961879153678806200, guid: c7c6770b81a7e5747a75e0c219e529cc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6361869767412213544, guid: c7c6770b81a7e5747a75e0c219e529cc, type: 3}
       propertyPath: m_Name
