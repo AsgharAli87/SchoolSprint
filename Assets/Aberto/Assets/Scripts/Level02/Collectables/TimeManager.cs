@@ -6,10 +6,10 @@ using TMPro;
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timertext;
-    [SerializeField] float MaxTime = 60f;
-    [SerializeField] float remainingtime = 45f;
+    [SerializeField] float MaxTime = 120f;
+    [SerializeField] float remainingtime = 100f;
 
-    private bool isDead;
+    
     public GameManagerScript gameManager;
 
     void Update()
@@ -20,8 +20,8 @@ public class TimeManager : MonoBehaviour
         
         UpdateTimerDisplay();
 
-        if (remainingtime <= 0 && !isDead)
-        {   isDead = true;
+        if (remainingtime <= 0)
+        {
             gameManager.GameOver();
         }
         
@@ -29,7 +29,7 @@ public class TimeManager : MonoBehaviour
 
     public void IncreasedTime(float time)
     {
-        remainingtime =+ time;
+        remainingtime += time;
         // Ensure time does not goes bellow min or excced maxValue
         remainingtime = Mathf.Clamp(remainingtime, 0, MaxTime);
     }

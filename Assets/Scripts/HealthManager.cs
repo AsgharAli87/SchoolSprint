@@ -11,15 +11,19 @@ public class HealthStop : MonoBehaviour
         // Check if the slider's value is zero
         if (healthSlider.value <= 0)
         {
-            playerMovement.walkspeed = 5f; 
+            playerMovement.walkspeed = 5f;
             // FreezeGame();
         }
     }
-
-   /* private void FreezeGame()
+    private void Start()
     {
-        Debug.Log("Health is zero! Game is now frozen.");
-        Time.timeScale = 0; // Freeze the game
+        Time.timeScale = 1f;
     }
-   */
+
+    /* private void FreezeGame()
+     {
+         Debug.Log("Health is zero! Game is now frozen.");
+         Time.timeScale = 0; // Freeze the game
+     }
+    */
 }

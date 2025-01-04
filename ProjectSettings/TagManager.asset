@@ -6,6 +6,18 @@ TagManager:
   tags:
   - Eatable
   - time
+  - Obstacle
+  - Stop
+  - IaCar
+  - Marcador
+  - Blocks
+  - mainmenu
+  
+
+  - END
+
+  - crash
+
   layers:
   - Default
   - TransparentFX

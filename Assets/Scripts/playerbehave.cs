@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 [System.Serializable]
 public class Playerbehave : MonoBehaviour
@@ -9,23 +10,20 @@ public class Playerbehave : MonoBehaviour
     [SerializeField] Hpbar _healthbar;
     [SerializeField] private float damageInterval = 60f; // Time interval between damage in seconds
     private float damageTimer = 0.0f; // Timer to track intervals
+    public GameManagerScript gameManager;
 
-    void Start()
-    {
-        _healthbar.SetMaxHealth(GameManager.gamemanager._playerHealth.MaxHealth);
-       
-    }
-
+    private bool isDead;
+   
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift)) 
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             damageTimer += Time.deltaTime; // Increment timer based on frame time
             if (damageTimer >= damageInterval) // Check if the interval has elapsed
             {
                 PLayerTakeDmg(1); // Apply damage
                 Debug.Log("Player Health: " + GameManager.gamemanager._playerHealth.Health);
-                damageTimer = 60.0f; // Reset the timer
+                damageTimer = 0.0f; // Reset the timer
             }
         }
         else
@@ -34,7 +32,15 @@ public class Playerbehave : MonoBehaviour
         }
 
     }
-   
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.transform.parent.gameObject.CompareTag("IaCar"))
+        {
+            Time.timeScale = 0f;
+            isDead = true;
+            gameManager.GameOver();
+        }
+    }
 
     private void PLayerTakeDmg(float dmg)
     {
